@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Metadati Dublin Core -->
+        <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"/>
+
+        <META name="DC.Title" content="Il Mondo Pokemon - Catalogo Digitale"/>
+        <META name="DC.Creator" content="Lorenzo Grasso"/>
+        <META name="DC.Subject" content="Pokemon, Pokedex, Personaggi, Film e Serie TV, Videogiochi"/>
+        <META name="DC.Description" content="Un catalogo digitale dedicato al mondo dei Pokemon, con schede dettagliate sui pokemon, personaggi, film, serie TV e videogiochi."/>
+        <META name="DC.Publisher" content="Github Pages"/>
+        <META name="DC.Date" content="2024/01/01"/>
+        <META name="DC.Type" content="Catalogo web interattivo"/>
+        <META name="DC.Format" content="Sito web"/>
+        <META name="DC.Source" content="Pokémon - Ideato da Satoshi Tajiri, sviluppato da Game Freak"/>
+        <META name="DC.Language" content="It"/>
+    
+         <!-- Bootstrap CSS -->
+         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+     
+         <!-- Bootstrap JS -->
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+     
+         <!-- CSS Personalizzato -->
+         <link rel="stylesheet" href="../css/stili_generali.css"/>
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="../favicon/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/svg+xml" href="../favicon/favicon.svg" />
+        <link rel="shortcut icon" href="../favicon/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png" />
+        <meta name="apple-mobile-web-app-title" content="MyWebSite" />
+        <link rel="manifest" href="../favicon/site.webmanifest" />
+    
+         <title>Il Mondo Pokemon</title>
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="bg-primary text-white py-5">
+            <div class="container text-center">
+                <img src="../immagini/altre/scrittaDEFINITIVA2pokemon.png" class="img-fluid immHeader" alt="SCRITTA POKEMON">
+            </div>
+        </header>
+    
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+            <div class="container d-flex justify-content-between align-items-center">
+              <!-- Logo + Scritta -->
+              <a class="navbar-brand d-flex align-items-center" href="../index.html">
+                <img src="../immagini/altre/Logo.jpg" alt="Logo" width="50" class="d-inline-block">
+                <span class="ms-3 brand-text">IL MONDO POKEMON</span>
+              </a>
+          
+              <!-- Menu + barra di ricerca -->
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav me-3">
+                  <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                  <li class="nav-item"><a class="nav-link" href="pokedex.html">Pokedex</a></li>
+                  <li class="nav-item"><a class="nav-link" href="personaggi.html">Personaggi</a></li>
+                  <li class="nav-item"><a class="nav-link" href="film_serieTV.html">Film e SerieTV</a></li>
+                  <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="videogiochiDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Videogiochi</a>
+                        <ul class="dropdown-menu" aria-labelledby="videogiochiDropdown">
+                            <li><a class="dropdown-item" href="#">Console</a></li>
+                            <li><a class="dropdown-item" href="#">Mobile</a></li>
+                            <li><a class="dropdown-item Novita" href="novita.html">Novita!</a></li>
+                        </ul>
+                    </li>
+                  <li class="nav-item"><a class="nav-link" href="accesso.html">Accedi</a></li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Cerca...">
+                  <button class="btn btn-light" type="submit">Cerca</button>
+                </form>
+              </div>
+          
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+        </nav>    
+          
+          <!-- Breadcrumbs -->
+        <nav aria-label="breadcrumb" class="py-2">
+            <div class="container">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Videogiochi</a></li>
+                    <li class="breadcrumb-item"><a href="#">Novità</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Leggende Pokemon: Z-A</li>
+                </ol>
+            </div>
+        </nav>
+
+<!------------------------------------------------------------------------------------------------------------------------------------------>
+
+    <!-- Main Content -->
+    <main class="container py-5">
+        <!-- Immagine e dettagli -->
+        <section class="row mb-5">
+            <div class="col-md-6">
+                <h2>Leggende Pokémon: Z-A</h2>
+                <img src="./../immagini/altre/Leggende-Pokemon-ZA.jpg" class="img-fluid rounded" alt="Leggende Pokémon: Z-A Cover">
+            </div>
+            <div class="col-md-6 d-flex align-items-center">
+                <div>
+                    <h3>Data di Uscita</h3>
+                    <p class="lead">In attesa di annuncio ufficiale (2025)</p>
+
+                    <h3>Console Compatibili</h3>
+                    <p class="lead">Nintendo Switch, Nintendo Switch 2</p>
+
+                    <h3>Descrizione</h3>
+                    <p>
+                        Leggende Pokémon: Z-A è il nuovo capitolo della serie "Leggende", che porta i giocatori in un'epica esplorazione
+                        dell'antica regione di Kalos. Scopri i segreti del Pokémon leggendario Zygarde, esplora ambientazioni inedite e vivi
+                        un'avventura open-world con meccaniche di gioco rinnovate.
+                    </p>
+
+                    <button class="bottone1 btn-outline-danger mt-3" data-bs-toggle="modal" data-bs-target="#loginModal">
+                        Preordina ora!
+                    </button>
+                </div>
+            </div>
+            
+        </section>
+
+        <!-- Recensioni -->
+        <section class="mb-5">
+            <h2 class="text-center mb-4">Recensioni</h2>
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <!-- Recensione 1 -->
+                <div class="col">
+                    <div class="card h-100 custom-card">
+                        <div class="card-body card-content">
+                            <h5 class="card-title">IGN</h5>
+                            <p class="card-text">"Un passo avanti per il franchise Pokémon. Ambientazioni mozzafiato e una storia coinvolgente."</p>
+                            <p class="text-warning">★ ★ ★ ★ ☆</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recensione 2 -->
+                <div class="col">
+                    <div class="card h-100 custom-card">
+                        <div class="card-body card-content">
+                            <h5 class="card-title">GameSpot</h5>
+                            <p class="card-text">"Una nuova direzione coraggiosa per Pokémon. Il mondo aperto è pieno di meraviglia e scoperte."</p>
+                            <p class="text-warning">★ ★ ★ ★ ☆</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recensione 3 -->
+                <div class="col">
+                    <div class="card h-100 custom-card">
+                        <div class="card-body card-content">
+                            <h5 class="card-title">Nintendo Life</h5>
+                            <p class="card-text">"Leggende Pokémon: Z-A è una lettera d'amore per i fan e un'esperienza memorabile per i nuovi giocatori."</p>
+                            <p class="text-warning">★ ★ ★ ★ ★</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trailer -->
+        <section class="text-center">
+            <h2 class="mb-4">Trailer Ufficiale</h2>
+            <div class="ratio ratio-16x9">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/eNML51GuBew?si=vLr11uS0DevQ4C_D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
+    </main>
+
+
+
+
+<!------------------------------------------------------------------------------------------------------------------------------------------->
+    
+          <!-- Footer -->
+        <footer>
+            <section class="container-fluid text-light py-3">
+                <div class="row">
+                    <!-- Disclaimer -->
+                    <div class="col-md-6 mb-3">
+                        <p class="mb-2">
+                            Tutti i diritti sui contenuti di questo sito (nomi, immagini, testi ed altro) sono di proprietà dei rispettivi autori e/o case editrici,
+                            sotto la tutela delle leggi internazionali sul copyright/trademark.
+                        </p>
+                        <p class="mb-0">
+                            Questo progetto è totalmente privo di scopi di lucro da parte dell'autore. Lo scopo è puramente amatoriale e perciò non è assolutamente affiliato o dipendente da alcun editore.
+                        </p>
+                    </div>
+                    <!-- Social Media -->
+                    <div class="col-md-3 mb-3 text-center">
+                        <h5 class="mb-3 footer">Seguici</h5>
+                        <a href="#" class="text-light me-3"><i class="bi bi-facebook fs-4"></i></a>
+                        <a href="#" class="text-light me-3"><i class="bi bi-twitter fs-4"></i></a>
+                        <a href="#" class="text-light me-3"><i class="bi bi-instagram fs-4"></i></a>
+                        <a href="#" class="text-light"><i class="bi bi-youtube fs-4"></i></a>
+                    </div>
+                    <!-- Link utili -->
+                    <div class="col-md-3 mb-3 text-center">
+                        <h5 class="mb-3 footer">Link Utili</h5>
+                        <ul class="list-inline mb-0">
+                            <li class="list-inline-item mx-2">
+                                <a class="text-light" href="#">Credits</a>
+                            </li>
+                            <li class="list-inline-item mx-2">
+                                <a class="text-light" href="WebProjectPlan.html">Web Project Plan</a>
+                            </li>
+                            <li class="list-inline-item mx-2">
+                                <a class="text-light" href="#">Informazioni</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </footer>
+        <!-- Modale Login -->
+            <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="loginModalLabel">Richiesto Login</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Per effettuare il preordine, accedi al tuo account.
+                        </div>
+                        <div class="modal-footer">
+                            <a href="accesso.html" class="bottone2">Accedi</a>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </body>
+</html>

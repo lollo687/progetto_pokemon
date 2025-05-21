@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+  <html lang="it">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!-- Metadati Dublin Core -->
+        <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"/>
+
+        <META name="DC.Title" content="Il Mondo Pokemon - Catalogo Digitale"/>
+        <META name="DC.Creator" content="Lorenzo Grasso"/>
+        <META name="DC.Subject" content="Pokemon, Pokedex, Personaggi, Film e Serie TV, Videogiochi"/>
+        <META name="DC.Description" content="Un catalogo digitale dedicato al mondo dei Pokemon, con schede dettagliate sui pokemon, personaggi, film, serie TV e videogiochi."/>
+        <META name="DC.Publisher" content="Github Pages"/>
+        <META name="DC.Date" content="2024/01/01"/>
+        <META name="DC.Type" content="Catalogo web interattivo"/>
+        <META name="DC.Format" content="Sito web"/>
+        <META name="DC.Source" content="Pokémon - Ideato da Satoshi Tajiri, sviluppato da Game Freak"/>
+        <META name="DC.Language" content="It"/>
+    
+      <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+   
+      <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+     
+      <!-- CSS Personalizzato -->
+        <link rel="stylesheet" href="../css/stili_generali.css"/>
+
+      <!-- Favicon -->
+        <link rel="icon" type="image/png" href="../favicon/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/svg+xml" href="../favicon/favicon.svg" />
+        <link rel="shortcut icon" href="../favicon/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png" />
+        <meta name="apple-mobile-web-app-title" content="MyWebSite" />
+        <link rel="manifest" href="../favicon/site.webmanifest" />
+    
+      <title>Il Mondo Pokemon</title>
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="bg-primary text-white py-5">
+            <div class="container text-center">
+                <img src="../immagini/altre/scrittaDEFINITIVA2pokemon.png" class="img-fluid immHeader" alt="SCRITTA POKEMON">
+            </div>
+        </header>
+    
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+            <div class="container d-flex justify-content-between align-items-center">
+              <!-- Logo + Scritta -->
+              <a class="navbar-brand d-flex align-items-center" href="../index.html">
+                <img src="../immagini/altre/Logo.jpg" alt="Logo" width="50" class="d-inline-block">
+                <span class="ms-3 brand-text">IL MONDO POKEMON</span>
+              </a>
+          
+              <!-- Menu + barra di ricerca -->
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav me-3">
+                  <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                  <li class="nav-item"><a class="nav-link" href="pokedex.html">Pokedex</a></li>
+                  <li class="nav-item"><a class="nav-link" href="personaggi.html">Personaggi</a></li>
+                  <li class="nav-item"><a class="nav-link" href="film_serieTV.html">Film e SerieTV</a></li>
+                  <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="videogiochiDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Videogiochi</a>
+                        <ul class="dropdown-menu" aria-labelledby="videogiochiDropdown">
+                            <li><a class="dropdown-item" href="#">Console</a></li>
+                            <li><a class="dropdown-item" href="#">Mobile</a></li>
+                            <li><a class="dropdown-item Novita" href="novita.html">Novita!</a></li>
+                        </ul>
+                    </li>
+                  <li class="nav-item"><a class="nav-link" href="accesso.html">Accedi</a></li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Cerca...">
+                  <button class="btn btn-light" type="submit">Cerca</button>
+                </form>
+              </div>
+          
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+        </nav>
+
+          <!-- Breadcrumbs -->
+        <nav aria-label="breadcrumb" class="py-2">
+            <div class="container">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Web Project Plan</li>
+                </ol>
+            </div>
+        </nav>
+
+<!------------------------------------------------------------------------------------------------------------------------------------------>
+
+<!-- Main Content -->
+<div class="container mt-5">
+        <!-- Idea -->
+        <section id="idea" class="mb-5">
+            <h2 class="text-center mb-4">1. Idea (Abstract)</h2>
+            <p>
+                Il progetto nasce con l'obiettivo di creare una collezione digitale completa dedicata al mondo dei Pokemon, 
+                offrendo un punto di riferimento per tutti gli appassionati. Gli utenti potranno esplorarlo attraverso i pokemon, 
+                suddivisi per regione, i personaggi, i film, le seire TV e i videogiochi. 
+            </p>
+            <p>
+                La piattaforma sarà intuitiva e interattiva, con strumenti avanzati di ricerca e filtri dettagliati per trovare rapidamente i contenuti desiderati. 
+                Ogni elemento sarà arricchito da informazioni dettagliate, curiosità e contenuti multimediali, offrendo un'esperienza immersiva per ogni fan.
+                Il sito sarà ottimizzato per ogni dispositivo, garantendo una navigazione fluida e piacevole.
+            </p>
+        </section>
+
+
+        <!-- Brief -->
+        <section id="brief" class="mb-5">
+            <h2 class="text-center mb-4">2. Brief</h2>
+        
+            <!-- Finalità -->
+            <h3 class="mb-3 wpplan">2.1 Finalità</h3>
+            <p>
+                Questo progetto nasce con l'obiettivo di creare una collezione digitale completa dedicata al mondo Pokemon. 
+                La piattaforma offrirà un'esperienza interattiva, permettendo agli utenti di esplorare ogni angolo del mondo pokemon attraverso film, serie tv, videogiochi, personaggi e ovviamente i POKEMON. 
+                Grazie a un sistema avanzato di ricerca e navigazione, sarà possibile filtrare i pokemon in base alla regione di appartenenza, e i personaggi
+                in base al loro ruolo, regione di provenienza e nome, rendendo la scoperta di informazioni e curiosità più semplice e immediata.
+            </p>
+        
+            <!-- Pubblico -->
+            <h3 class="mb-3 wpplan">2.2 Pubblico</h3>
+            <p>
+                Il sito è pensato per tutti gli appassionati di Pokemon, sia per i fan di lunga data che vogliono approfondire la loro conoscenza, sia per i nuovi utenti che desiderano esplorare la saga per la prima volta. 
+                Grazie a un’interfaccia intuitiva e accessibile, anche chi non ha familiarità con il franchise potrà scoprire facilmente i contenuti. 
+                Gli utenti potranno accedere liberamente come ospiti per consultare le informazioni, oppure registrarsi per personalizzare la propria esperienza, 
+                salvando i contenuti preferiti e interagendo con la community tramite commenti e discussioni, oltre alla possibilità di preordinare le novità in arrivo.
+            </p>
+        
+            <!-- Accesso -->
+            <h3 class="mb-3 wpplan">2.3 Accesso</h3>
+            <p>
+                La piattaforma sarà progettata per garantire un'esperienza fluida e veloce su qualsiasi dispositivo, che sia un computer, uno smartphone o un tablet. 
+                Grazie all’uso di un design responsivo basato su Bootstrap, il layout si adatterà automaticamente a ogni schermo, assicurando una navigazione semplice e intuitiva. 
+                Anche con la presenza di immagini e contenuti multimediali, il sito manterrà prestazioni elevate per offrire un accesso rapido alle informazioni senza compromessi.
+            </p>
+        
+            <!-- Contenuti e Dati -->
+            <h3 class="mb-3 wpplan">2.4 Contenuti e Dati</h3>
+            <p>
+                Il sito presenterà un’ampia raccolta di immagini, video e schede informative basate su fonti ufficiali, inclusi personaggi, anime e videogiochi. 
+                Ogni contenuto sarà corredato da dettagli tecnici, descrizioni e curiosità, garantendo un archivio ben strutturato e sempre aggiornato.  
+                Inoltre, il sito avrà un’identità visiva unica, con un logo originale e una favicon personalizzata per rafforzare il brand della piattaforma.
+            </p>
+        </section>
+        
+
+
+        <!-- Benchmark  -->
+        <section id="benchmark" class="py-5">
+            <div class="container">
+                <h2 class="mb-4 text-center">3. Benchmark</h2>
+
+                <!-- Analisi di mercato -->
+                <h3 class="mb-3 wpplan">3.1 Analisi di mercato</h3>
+                <p>
+                    Esistono diverse piattaforme online dedicate ai Pokemon, ma molte si concentrano su un singolo aspetto della saga, come i personaggi, gli anime o i videogiochi, senza fornire un’esperienza completa e integrata. 
+                    Inoltre, molte di queste piattaforme presentano interfacce datate o sistemi di navigazione poco intuitivi, rendendo l'esperienza utente meno fluida e coinvolgente.
+                </p>
+                <p>
+                    Il progetto si propone di colmare questa lacuna offrendo una piattaforma moderna e interattiva, che riunisca in un unico spazio tutti gli elementi del mondo dei Pokemon. 
+                </p>
+
+                <!-- Descrizione dei concorrenti -->
+                <h3 class="mt-5 mb-3 wpplan">3.2 Analisi dei concorrenti</h3>
+                <ul class="list-group">
+                    <!-- Serebii -->
+                    <li class="list-group-item">
+                        <h4>Serebii.net</h4>
+                        <p><a href="https://www.serebii.net/" target="_blank">https://www.serebii.net/</a></p>
+                        <p><strong>Descrizione:</strong> Uno dei siti Pokémon più longevi e completi, con informazioni aggiornate su giochi, eventi, episodi anime e Pokémon.</p>
+                        <p><strong>Punti di forza:</strong> Affidabilità, aggiornamenti rapidi e database estremamente dettagliato.</p>
+                        <p><strong>Limiti:</strong> Design poco moderno e interfaccia poco mobile-friendly.</p>
+                    </li>
+
+                    <!-- Bulbapedia -->
+                    <li class="list-group-item">
+                        <h4>Bulbapedia</h4>
+                        <p><a href="https://bulbapedia.bulbagarden.net/" target="_blank">https://bulbapedia.bulbagarden.net/</a></p>
+                        <p><strong>Descrizione:</strong> Un’enciclopedia collaborativa creata dalla community, che raccoglie dati su ogni aspetto del mondo Pokémon, dai giochi al merchandise.</p>
+                        <p><strong>Punti di forza:</strong> Grande quantità di contenuti, struttura wiki estesa e accesso libero a tutte le informazioni.</p>
+                        <p><strong>Limiti:</strong> Navigazione complessa e visualizzazione a volte dispersiva per l’utente medio.</p>
+                    </li>
+
+                    <!-- PokéXperto -->
+                    <li class="list-group-item">
+                        <h4>PokéXperto</h4>
+                        <p><a href="https://www.pokexperto.net/" target="_blank">https://www.pokexperto.net/</a></p>
+                        <p><strong>Descrizione:</strong> Un sito spagnolo molto noto per le sue analisi competitive, dati tecnici e copertura degli annunci ufficiali.</p>
+                        <p><strong>Punti di forza:</strong> Approccio tecnico, focus sulla strategia e contenuti ben curati.</p>
+                        <p><strong>Limiti:</strong> Interfaccia datata e organizzazione dei contenuti non sempre intuitiva per i nuovi utenti.</p>
+                    </li>
+                </ul>
+
+                <!-- Differenziazione del progetto -->
+                <div class="mt-5">
+                    <h3 class="wpplan">3.3 Come si distingue questo progetto</h3>
+                    <p>
+                        A differenza dei siti concorrenti, questo progetto offre una piattaforma moderna e centralizzata che integra informazioni su videogiochi, film, serie TV, personaggi e Pokemon in modo coerente e personalizzabile. 
+                        L’interfaccia è progettata per essere chiara, accessibile e responsive, con funzioni avanzate di ricerca e filtri che migliorano l’esperienza dell’utente, distinguendosi per usabilità e completezza.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Struttura  -->
+        <section id="struttura" class="py-5 bg-light">
+            <div class="container">
+            <h2 class="mb-4 text-center">4. Struttura</h2>
+
+            <!-- Mappa concettuale -->
+         <section id="mappa-concettuale" class="mb-5">
+            <h3 class="wpplan">4.1 Mappa concettuale</h3>
+            <div class="text-center">
+                <img src="./../immagini/altre/mappaConcettuale.png" class="img-fluid border shadow-sm" alt="Mappa Concettuale">
+            </div>
+            <p class="mt-3">
+                Il progetto è suddiviso in quattro sezioni principali: <strong>Pokedex</strong>, <strong>Personaggi</strong>, <strong>Film e SerieTV</strong> e <strong>Videogiochi</strong>. 
+                Ogni sezione consente di esplorare il mondo Pokemon in modo intuitivo, grazie a filtri avanzati che permettono di ordinare i contenuti.
+            </p>
+            <p>
+                I personaggi e i Pokemon sono classificati in base al loro <strong>ruolo</strong> e la loro <strong>regione d'origine</strong>, mentre i videogiochi sono suddivisi per <strong>piattaforma</strong> (Console/PC o Mobile), facilitando la ricerca e la navigazione.
+            </p>
+         </section>
+
+
+        <!-- Schema delle dipendenze -->
+        <section id="schema-dipendenze" class="mb-5">
+            <h3 class="wpplan">4.2 Schema delle dipendenze</h3>
+            <div class="text-center">
+                <img src="./../immagini/altre/schemaDipendenze.png" class="img-fluid border shadow-sm" alt="Schema delle Dipendenze">
+            </div>
+            <p class="mt-3">
+                La <strong>homepage</strong> rappresenta il punto di accesso principale al sito e permette una navigazione immediata verso le quattro categorie principali:
+            </p>
+            <ul>
+                <li><strong>Pokedex:</strong> Catalogo completo con informazioni dettagliate su ogni pokemon, inclusi tipo, trasformazioni, linea evolutiva, statistiche fisiche e di combattimento.</li>
+                <li><strong>Personaggi:</strong> Sezione dedicata ai protagonisti e antagonisti della saga, con informazioni su ruolo e regione di provenienza.</li>
+                <li><strong>Film e SerieTV:</strong> Elenco delle serie e dei film, con descrizioni dettagliate.</li>
+                <li><strong>Videogiochi:</strong> Raccolta di tutti i titoli usciti su diverse piattaforme, con dettagli su sviluppatori, modalità di gioco e recensioni.</li>
+                <li><strong>Accesso Utente:</strong> Pagina dedicata agli utenti registrati, dove possono salvare i loro contenuti preferiti, creare liste personalizzate e gestire le impostazioni del proprio profilo.</li>
+            </ul>
+        </section>
+
+        <!-- Categorie descrittive -->
+        <section id="categorie-descrittive">
+            <h3 class="wpplan">4.3 Categorie descrittive</h3>
+            <p>Di seguito un esempio di scheda tecnica relativa a un pokemon: <em>Charizard</em>:</p>
+            <div class="p-3 bg-white border rounded shadow-sm">
+                <ul class="list-unstyled">
+                    <li class="list-group-item"><strong>Nome:</strong> Charizard</li>
+                    <li class="list-group-item"><strong>Tipo:</strong> <span class="tipo tipoFuoco">FUOCO</span> <span class="tipo tipoVolante">VOLANTE</span></li>
+                    <li class="list-group-item"><strong>Peso:</strong> 90,5 Kg</li>
+                    <li class="list-group-item"><strong>Altezza:</strong> 1,7 m</li>
+                    <li class="list-group-item"><strong>PS (HP):</strong> 78</li>
+                    <li class="list-group-item"><strong>Attacco:</strong> 84</li>
+                    <li class="list-group-item"><strong>Difesa:</strong> 78</li>
+                    <li class="list-group-item"><strong>Att. Speciale:</strong> 109</li>
+                    <li class="list-group-item"><strong>Dif. Speciale:</strong> 85</li>
+                    <li class="list-group-item"><strong>Velocità:</strong> 100</li>
+                    <li class="list-group-item"><strong>Abilità standard:</strong> Aiutofuoco</li>
+                    <li class="list-group-item"><strong>Abilità nascosta:</strong> Solarpower</li>
+                </ul>
+                <p class="mt-3"><strong>Descrizione:</strong> <em>Charizard</em> è un potente Pokémon draconico di tipo Fuoco/Volante. Con le sue ali può volare ad alta quota e incenerire i 
+                    nemici con fiammate devastanti. Fiero e leale, è noto per combattere solo con avversari degni della sua forza.</p>
+            </div>
+        </section>
+
+    </div>
+</section>
+
+
+<!-- Wireframes -->
+<section id="wireframes" class="py-5">
+    <div class="container">
+        <h2 class="mb-4 text-center">5. Wireframes</h2>
+        <p class="text-center">
+            Questa sezione mostra la rappresentazione grafica delle pagine principali e della loro struttura.
+        </p>
+
+        <!-- Carosello -->
+        <div id="wireframeCarousel" class="carousel slide mt-4" data-bs-interval="false">
+            <!-- Indicatori -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#wireframeCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#wireframeCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#wireframeCarousel" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#wireframeCarousel" data-bs-slide-to="3"></button>
+                <button type="button" data-bs-target="#wireframeCarousel" data-bs-slide-to="4"></button>
+                <button type="button" data-bs-target="#wireframeCarousel" data-bs-slide-to="5"></button>
+                <button type="button" data-bs-target="#wireframeCarousel" data-bs-slide-to="6"></button>
+            </div>
+
+            <!-- Slide -->
+            <div class="carousel-inner text-center">
+                <div class="carousel-item active">
+                    <h4 class="mb-3">Homepage</h4>
+                    <img src="./../immagini/Wireframes/homePage.png" class="d-block w-100" alt="Wireframe Homepage">
+                </div>
+                <div class="carousel-item">
+                    <h4 class="mb-3">Pokedex</h4>
+                    <img src="./../immagini/Wireframes/pokedex.png" class="d-block w-100" alt="Wireframe Pokedex">
+                </div>
+                <div class="carousel-item">
+                    <h4 class="mb-3">Item</h4>
+                    <img src="./../immagini/Wireframes/item.png" class="d-block w-100" alt="Wireframe Item">
+                </div>
+                <div class="carousel-item">
+                    <h4 class="mb-3">Personaggi</h4>
+                    <img src="./../immagini/Wireframes/personaggi.png" class="d-block w-100" alt="Wireframe Personaggi">
+                </div>
+                <div class="carousel-item">
+                    <h4 class="mb-3">Film e SerieTV</h4>
+                    <img src="./../immagini/Wireframes/filmSerieTV.png" class="d-block w-100" alt="Wireframe Film e SerieTV">
+                </div>
+                <div class="carousel-item">
+                    <h4 class="mb-3">Videogiochi</h4>
+                    <img src="./../immagini/Wireframes/novita.png" class="d-block w-100" alt="Wireframe Videogiochi">
+                </div>
+                <div class="carousel-item">
+                    <h4 class="mb-3">Accesso</h4>
+                    <img src="./../immagini/Wireframes/accesso.png" class="d-block w-100" alt="Wireframe Accesso">
+                </div>
+            </div>
+
+            <!-- Controlli Precedente/Succcessivo -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#wireframeCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Precedente</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#wireframeCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Successivo</span>
+            </button>
+        </div>
+    </div>
+</section>
+
+
+
+
+    <!-- Usabilità -->
+    <section id="usabilita" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="mb-4 text-center">6. Usabilità</h2>
+
+            <h3 class="wpplan">Norme di usabilità per l'architettura</h3>
+            <p>
+                La navbar, posizionata in alto, rimane sempre visibile durante lo scrolling grazie alla funzione sticky, migliorando la navigazione dell'utente. 
+                Inoltre, l'uso delle breadcrumbs aiuta a mantenere un chiaro orientamento nelle sezioni secondarie del sito. Le pagine sono suddivise in sezioni ben definite, 
+                con un layout coerente che garantisce all'utente un'esperienza fluida e intuitiva.
+            </p>
+
+            <h3 class="wpplan">Norme di usabilità per l'aspetto e la tipografia</h3>
+            <p>
+                Il sito utilizza il font <strong>Arial</strong>, con testi di colore blu scuro e nero su sfondo bianco per assicurare la massima leggibilità. 
+                Gli elementi interattivi, come link e pulsanti, sono evidenziati con effetti hover per facilitare l'interazione.
+            </p>
+
+            <h3 class="wpplan">Norme di usabilità per colori, font e icone</h3>
+            <p>
+                La palette cromatica è composta da <strong>blu</strong>, <strong>bianco</strong> e <strong>verde</strong> per i bottoni, per un look moderno e coerente con l'estetica pokemon. 
+                Le icone di <strong>Bootstrap</strong> sono integrate per migliorare l'accessibilità e la comunicazione visiva.
+            </p>
+        </div>
+    </section>
+
+    <!-- Servizi -->
+    <section id="servizi" class="py-5">
+        <div class="container">
+            <h2 class="mb-4 text-center">7. Servizi</h2>
+
+            <h3 class="wpplan">7.1 Sistemi di browsing per valorizzare</h3>
+            <p>
+                Il catalogo del sito offre diversi strumenti avanzati per navigare ed esplorare i contenuti in modo intuitivo. Gli utenti possono filtrare i contenuti in base a:
+            </p>
+            <ul>
+                <li><strong>Pokemon:</strong> Classificati in base alla regione di origine.</li>
+                <li><strong>Personaggi:</strong> Ricerca avanzata con filtri per ruolo (protagonisti, antagonisti, secondari) e per regione di origine.</li>
+                <li><strong>Film e SerieTV:</strong> Suddivisi per serieTV e film.</li>
+                <li><strong>Videogiochi:</strong> Classificati in base alla piattaforma (console o mobile) e all'anno di uscita.</li>
+            </ul>
+            
+            <h3 class="wpplan">7.2 Utilities e tool per l'interazione</h3>
+            <p>
+                Il sito offre diverse funzionalità interattive per migliorare l'esperienza utente:
+            </p>
+            <ul>
+                <li><strong>Bottoni:</strong> Pulsanti dinamici che cambiano stile al passaggio del mouse per indicare la loro interattività.</li>
+                <li><strong>Accordion:</strong> Utilizzati per nascondere o espandere sezioni di contenuto, come i filtri di ricerca, migliorando l'organizzazione.</li>
+                <li><strong>Card:</strong> Ogni elemento (personaggi, episodi, videogiochi) è presentato con un layout a card, fornendo anteprime visive immediate.</li>
+                <li><strong>Carousel:</strong> Utilizzato per esplorare i contenuti in modo interattivo, con slide dedicate ai pokemon e ai pokemon più amati.</li>
+                <li><strong>Modali:</strong> Finestra pop-up per informazioni aggiuntive, conferme di azioni o anteprime di contenuti.</li>
+                <li><strong>Sticky Navbar:</strong> La barra di navigazione rimane fissa in alto per facilitare l'accesso alle varie sezioni.</li>
+                <li><strong>Pagination:</strong> Utilizzata nelle sezioni con un elevato numero di contenuti, per migliorare la gestione e il caricamento delle pagine.</li>
+            </ul>
+
+            <h3 class="wpplan">7.3 Sviluppi futuri</h3>
+            <p>
+                In futuro, il sito potrebbe essere ampliato con nuove funzionalità per offrire un'esperienza utente ancora più coinvolgente:
+            </p>
+            <ul>
+                <li><strong>Sezione ambientazioni:</strong> Area dedicata a tutte le regioni della serie, facendo riferimento a dettagli unici che le differenziano l'una dall'altra.</li>
+                <li><strong>Area Community:</strong> Un forum o sezione commenti dove gli utenti possono discutere teorie, personaggi e pokemon preferiti.</li>
+                <li><strong>Database Espanso:</strong> Approfondimenti su curiosità e materiali esclusivi.</li>
+                <li><strong>Carte collezionabili:</strong> Area dedicata interamente alle carte Pokemon, classificandole per espansione.</li>
+
+            </ul>
+        </div>
+    </section>
+
+    <!-- Bibliografia -->
+    <section id="bibliografia" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="mb-4 text-center">8. Bibliografia</h2>
+            <ul>
+                <li>Mappa interattiva realizzata con StoryMapJS di Knightlab: 
+                    <a href="https://storymap.knightlab.com/" target="_blank">storymap.knightlab.com</a></li>
+                <li>Wireframes creati con Balsamiq Wireframes: 
+                    <a href="https://balsamiq.com/" target="_blank">balsamiq.com</a></li>
+                <li>Mappa concettuale e schema realizzati con Diagrams.net: 
+                    <a href="https://app.diagrams.net/" target="_blank">app.diagrams.net</a></li>
+                <li>Sito pubblicato con GitHub Pages: 
+                    <a href="https://pages.github.com/" target="_blank">pages.github.com</a></li>
+                <li>Immagini ottenute da internet e Pinterest: 
+                    <a href="https://www.pinterest.com/" target="_blank">www.pinterest.com</a></li>
+                <li>Logo creato con PhotoShop e Pinterest: 
+                    <a href="https://www.pinterest.com/" target="_blank">www.pinterest.com</a></li>
+                <li>Codice sviluppato con Visual Studio Code.</li>
+            </ul>
+
+            <h3 class="mt-4 wpplan">Testi e Immagini</h3>
+            <p>
+                <strong>Immagini:</strong> Le immagini utilizzate nel sito provengono da fonti ufficiali e pubbliche, rappresentando personaggi, luoghi e momenti iconici della saga.
+            </p>
+            <p>
+                <strong>Testi:</strong> Tutti i testi sono stati redatti manualmente e verificati con fonti attendibili, come il sito ufficiale di Pokemon.
+            </p>
+
+            <h3 class="mt-4 wpplan">Fonti per il layout e la struttura</h3>
+            <p>
+                Per la progettazione del layout e della struttura del sito, ho preso ispirazione dalle <strong>slide del corso di Informatica Umanistica</strong> della Prof.ssa 
+                <a href="https://virtuale.unibo.it/course/view.php?id=65675" target="_blank">Francesca Tomasi su Virtuale</a>.
+            </p>
+            <p>
+                Inoltre, ho fatto riferimento al sito di esempio 
+                <a href="https://alessandro-rocchi.github.io/progetto_dylan_dog_rocchi_alessandro/index.html" target="_blank">
+                "Progetto Dylan Dog" di Alessandro Rocchi</a>.
+            </p>
+        </div>
+    </section>
+</div>
+
+<!------------------------------------------------------------------------------------------------------------------------------------------->
+    
+          <!-- Footer -->
+          <footer>
+            <section class="container-fluid text-light py-3">
+                <div class="row">
+                    <!-- Disclaimer -->
+                    <div class="col-md-6 mb-3">
+                        <p class="mb-2">
+                            Tutti i diritti sui contenuti di questo sito (nomi, immagini, testi ed altro) sono di proprietà dei rispettivi autori e/o case editrici,
+                            sotto la tutela delle leggi internazionali sul copyright/trademark.
+                        </p>
+                        <p class="mb-0">
+                            Questo progetto è totalmente privo di scopi di lucro da parte dell'autore. Lo scopo è puramente amatoriale e perciò non è assolutamente affiliato o dipendente da alcun editore.
+                        </p>
+                    </div>
+                    <!-- Social Media -->
+                    <div class="col-md-3 mb-3 text-center">
+                        <h5 class="mb-3 footer">Seguici</h5>
+                        <a href="#" class="text-light me-3"><i class="bi bi-facebook fs-4"></i></a>
+                        <a href="#" class="text-light me-3"><i class="bi bi-twitter fs-4"></i></a>
+                        <a href="#" class="text-light me-3"><i class="bi bi-instagram fs-4"></i></a>
+                        <a href="#" class="text-light"><i class="bi bi-youtube fs-4"></i></a>
+                    </div>
+                    <!-- Link utili -->
+                    <div class="col-md-3 mb-3 text-center">
+                        <h5 class="mb-3 footer">Link Utili</h5>
+                        <ul class="list-inline mb-0">
+                            <li class="list-inline-item mx-2">
+                                <a class="text-light" href="#">Credits</a>
+                            </li>
+                            <li class="list-inline-item mx-2">
+                                <a class="text-light" href="WebProjectPlan.html">Web Project Plan</a>
+                            </li>
+                            <li class="list-inline-item mx-2">
+                                <a class="text-light" href="#">Informazioni</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </footer>
+    </body>
+</html>

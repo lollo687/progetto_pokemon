@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Metadati Dublin Core -->
+        <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"/>
+
+        <META name="DC.Title" content="Il Mondo Pokemon - Catalogo Digitale"/>
+        <META name="DC.Creator" content="Lorenzo Grasso"/>
+        <META name="DC.Subject" content="Pokemon, Pokedex, Personaggi, Film e Serie TV, Videogiochi"/>
+        <META name="DC.Description" content="Un catalogo digitale dedicato al mondo dei Pokemon, con schede dettagliate sui pokemon, personaggi, film, serie TV e videogiochi."/>
+        <META name="DC.Publisher" content="Github Pages"/>
+        <META name="DC.Date" content="2024/01/01"/>
+        <META name="DC.Type" content="Catalogo web interattivo"/>
+        <META name="DC.Format" content="Sito web"/>
+        <META name="DC.Source" content="Pokémon - Ideato da Satoshi Tajiri, sviluppato da Game Freak"/>
+        <META name="DC.Language" content="It"/>
+    
+         <!-- Bootstrap CSS -->
+         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+     
+         <!-- Bootstrap JS -->
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+     
+         <!-- CSS Personalizzato -->
+         <link rel="stylesheet" href="../css/stili_generali.css"/>
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="../favicon/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/svg+xml" href="../favicon/favicon.svg" />
+        <link rel="shortcut icon" href="../favicon/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png" />
+        <meta name="apple-mobile-web-app-title" content="MyWebSite" />
+        <link rel="manifest" href="../favicon/site.webmanifest" />
+    
+         <title>Il Mondo Pokemon</title>
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="bg-primary text-white py-5">
+            <div class="container text-center">
+                <img src="../immagini/altre/scrittaDEFINITIVA2pokemon.png" class="img-fluid immHeader" alt="SCRITTA POKEMON">
+            </div>
+        </header>
+    
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+            <div class="container d-flex justify-content-between align-items-center">
+              <!-- Logo + Scritta -->
+              <a class="navbar-brand d-flex align-items-center" href="../index.html">
+                <img src="../immagini/altre/Logo.jpg" alt="Logo" width="50" class="d-inline-block">
+                <span class="ms-3 brand-text">IL MONDO POKEMON</span>
+              </a>
+          
+              <!-- Menu + barra di ricerca -->
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav me-3">
+                  <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                  <li class="nav-item"><a class="nav-link active" href="pokedex.html">Pokedex</a></li>
+                  <li class="nav-item"><a class="nav-link" href="personaggi.html">Personaggi</a></li>
+                  <li class="nav-item"><a class="nav-link" href="film_serieTV.html">Film e SerieTV</a></li>
+                  <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="videogiochiDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Videogiochi</a>
+                        <ul class="dropdown-menu" aria-labelledby="videogiochiDropdown">
+                            <li><a class="dropdown-item" href="#">Console</a></li>
+                            <li><a class="dropdown-item" href="#">Mobile</a></li>
+                            <li><a class="dropdown-item Novita" href="novita.html">Novita!</a></li>
+                        </ul>
+                    </li>
+                  <li class="nav-item"><a class="nav-link" href="accesso.html">Accedi</a></li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Cerca...">
+                  <button class="btn btn-light" type="submit">Cerca</button>
+                </form>
+              </div>
+          
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+        </nav>    
+          
+          <!-- Breadcrumbs -->
+        <nav aria-label="breadcrumb" class="py-2">
+            <div class="container">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Pokedex</li>
+                </ol>
+            </div>
+        </nav>
+
+<!------------------------------------------------------------------------------------------------------------------------------------------>
+<main class="container py-5">
+    <!-- Regioni del mondo Pokemon -->
+    <h1 class="mb-4">Scegli una regione:</h1>
+    <div class="text-center mb-4">
+        <!-- Hoenn (disabilitato) -->
+        <figure class="region-item">
+            <figcaption>Hoenn</figcaption>
+            <img src="../immagini/regioni/hoenn2.jpg" alt="Hoenn" class="category-img disabled" />
+        </figure>
+        
+        <!-- Kanto (attivo) -->
+        <figure class="region-item">
+            <figcaption>Kanto</figcaption>
+            <img src="../immagini/regioni/kanto2.jpg" alt="Kanto" class="category-img active" onclick="showCategory('kanto')" />
+        </figure>
+        
+        <!-- Johto (disabilitato) -->
+        <figure class="region-item">
+            <figcaption>Johto</figcaption>
+            <img src="../immagini/regioni/johto2.jpg" alt="Johto" class="category-img disabled" />
+        </figure>
+        
+        <!-- Sinnoh (attivo) -->
+        <figure class="region-item">
+            <figcaption>Sinnoh</figcaption>
+            <img src="../immagini/regioni/sinnoh2.jpg" alt="Sinnoh" class="category-img" onclick="showCategory('sinnoh')" />
+        </figure>
+        
+        <!-- Altre regioni disabilitate -->
+        <figure class="region-item">
+            <figcaption>Kalos</figcaption>
+            <img src="../immagini/regioni/kalos2.jpg" alt="Kalos" class="category-img disabled" />
+        </figure>
+        <figure class="region-item">
+            <figcaption>Unima</figcaption>
+            <img src="../immagini/regioni/unima2.jpg" alt="Unima" class="category-img disabled" />
+        </figure>
+        <figure class="region-item">
+            <figcaption>Alola</figcaption>
+            <img src="../immagini/regioni/alola2.jpg" alt="Alola" class="category-img disabled" />
+        </figure>
+        <figure class="region-item">
+            <figcaption>Galar</figcaption>
+            <img src="../immagini/regioni/galar2.jpg" alt="Galar" class="category-img disabled" />
+        </figure>
+    </div>
+    
+    <!-- Elenco dei Pokemon -->
+
+     <!-----------------POKEMON DI KANTO----------------->
+    <div id="kanto" class="category-section">
+        <h2 class="text-center mb-4">POKEDEX DI KANTO</h2>
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+            <!-- Card Charmander -->
+            <div class="col">
+                <div class="card h-100 custom-card">
+                    <div class="text-center p-2">
+                        <h5 class="card-title mb-4 mt-2">Charmander</h5> <!-- TITOLO SOPRA -->
+                        <img src="../immagini/pokedex/charmander.png" class="custom-img " alt="Charmander">
+                        <p class="card-text mt-3">
+                            <span>Forma Base</span><br>
+                            <span class="tipo tipoFuoco mb-4">FUOCO</span>
+                        </p>
+                        <button class="bottone2 mt-2">Dettagli</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Card Charmeleon -->
+            <div class="col">
+                <div class="card h-100 custom-card">
+                    <div class="text-center p-2">
+                        <h5 class="card-title mb-4 mt-2">Charmeleon</h5> <!-- TITOLO SOPRA -->
+                        <img src="../immagini/pokedex/charmeleon.png" class="custom-img " alt="Charmander">
+                        <p class="card-text mt-3">
+                            <span>Evoluzione 1</span><br>
+                            <span class="tipo tipoFuoco mb-4">FUOCO</span>
+                        </p>
+                        <button class="bottone2 mt-2" href="#">Dettagli</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Card Charizard -->
+            <div class="col">
+                <div class="card h-100 custom-card">
+                    <div class="text-center p-2">
+                        <h5 class="card-title mb-4 mt-2">Charizard</h5> <!-- TITOLO SOPRA -->
+                        <img src="../immagini/pokedex/charizard.png" class="custom-img" alt="Charizard">
+                        <p class="card-text mt-3">
+                            <span>Evoluzione 2</span><br>
+                            <span class="tipo tipoFuoco">FUOCO</span> 
+                            <span class="tipo tipoVolante mb-4">VOLANTE</span>
+                        </p>
+                        <a href="item_1.html" class="bottone2 mt-2">Dettagli</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card Pikachu -->
+            <div class="col">
+                <div class="card h-100 custom-card">
+                    <div class="text-center p-2">
+                        <h5 class="card-title mb-4 mt-2">Pikachu</h5> <!-- TITOLO SOPRA -->
+                        <img src="../immagini/pokedex/pikachu.png" class="custom-img " alt="Pikachu">
+                        <p class="card-text mt-3">
+                            <span>Forma Base</span><br>
+                            <span class="tipo tipoElettro mb-4">ELETTRO</span>
+                        </p>
+                        <button class="bottone2 mt-2">Dettagli</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-----------------POKEMON DI SINNOH----------------->
+    <div id="sinnoh" class="category-section d-none">
+        <h2 class="text-center mb-4">POKEDEX DI SINNOH</h2>
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+            <!-- Card Turtwig -->
+             <div class="col">
+                <div class="card h-100 custom-card">
+                    <div class="text-center p-2">
+                        <h5 class="card-title mb-4 mt-2">Turtwig</h5> <!-- TITOLO SOPRA -->
+                        <img src="../immagini/pokedex/turtwig.png" class="custom-img " alt="Turtwig">
+                        <p class="card-text mt-3">
+                            <span>Forma Base</span><br>
+                            <span class="tipo tipoErba mb-4">ERBA</span>
+                        </p>
+                        <button class="bottone2 mt-2">Dettagli</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Card Grotle -->
+             <div class="col">
+                <div class="card h-100 custom-card">
+                    <div class="text-center p-2">
+                        <h5 class="card-title mb-4 mt-2">Grotle</h5> <!-- TITOLO SOPRA -->
+                        <img src="../immagini/pokedex/grotle.png" class="custom-img " alt="Grotle">
+                        <p class="card-text mt-3">
+                            <span>Evoluzione 1</span><br>
+                            <span class="tipo tipoErba mb-4">ERBA</span>
+                        </p>
+                        <button class="bottone2 mt-2">Dettagli</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Card Torterra -->
+            <div class="col">
+                <div class="card h-100 custom-card">
+                    <div class="text-center p-2">
+                        <h5 class="card-title mb-4 mt-2">Torterra</h5> <!-- TITOLO SOPRA -->
+                        <img src="../immagini/pokedex/torterra.png" class="custom-img" alt="Torterra">
+                        <p class="card-text mt-3">
+                            <span>Evoluzione 2</span><br>
+                            <span class="tipo tipoErba">ERBA</span>
+                            <span class="tipo tipoTerra mb-4">TERRA</span>
+                        </p>
+                        <button class="bottone2 mt-2">Dettagli</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Card Palkia -->
+             <div class="col">
+                <div class="card h-100 custom-card">
+                    <div class="text-center p-2">
+                        <h5 class="card-title mb-4 mt-2">Palkia</h5> <!-- TITOLO SOPRA -->
+                        <img src="../immagini/pokedex/palkia.png" class="custom-img" alt="Palkia">
+                        <p class="card-text mt-3">
+                            <span>Pokemon Leggendario</span><br>
+                            <span class="tipo tipoAcqua">ACQUA</span>
+                            <span class="tipo tipoDrago mb-4">DRAGO</span>
+                        </p>
+                        <button class="bottone2 mt-2">Dettagli</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Paginazione -->
+    <nav aria-label="Paginazione" class="mt-4">
+        <ul class="pagination justify-content-center">
+            <li class="page-item disabled">
+                <a class="page-link">Precedente</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+                <a class="page-link" href="#">Successivo</a>
+            </li>
+        </ul>
+    </nav>
+</main>
+
+
+
+
+<!------------------------------------------------------------------------------------------------------------------------------------------->
+    
+          <!-- Footer -->
+          <footer>
+            <section class="container-fluid text-light py-3">
+                <div class="row">
+                    <!-- Disclaimer -->
+                    <div class="col-md-6 mb-3">
+                        <p class="mb-2">
+                            Tutti i diritti sui contenuti di questo sito (nomi, immagini, testi ed altro) sono di proprietà dei rispettivi autori e/o case editrici,
+                            sotto la tutela delle leggi internazionali sul copyright/trademark.
+                        </p>
+                        <p class="mb-0">
+                            Questo progetto è totalmente privo di scopi di lucro da parte dell'autore. Lo scopo è puramente amatoriale e perciò non è assolutamente affiliato o dipendente da alcun editore.
+                        </p>
+                    </div>
+                    <!-- Social Media -->
+                    <div class="col-md-3 mb-3 text-center">
+                        <h5 class="mb-3 footer">Seguici</h5>
+                        <a href="#" class="text-light me-3"><i class="bi bi-facebook fs-4"></i></a>
+                        <a href="#" class="text-light me-3"><i class="bi bi-twitter fs-4"></i></a>
+                        <a href="#" class="text-light me-3"><i class="bi bi-instagram fs-4"></i></a>
+                        <a href="#" class="text-light"><i class="bi bi-youtube fs-4"></i></a>
+                    </div>
+                    <!-- Link utili -->
+                    <div class="col-md-3 mb-3 text-center">
+                        <h5 class="mb-3 footer">Link Utili</h5>
+                        <ul class="list-inline mb-0">
+                            <li class="list-inline-item mx-2">
+                                <a class="text-light" href="#">Credits</a>
+                            </li>
+                            <li class="list-inline-item mx-2">
+                                <a class="text-light" href="WebProjectPlan.html">Web Project Plan</a>
+                            </li>
+                            <li class="list-inline-item mx-2">
+                                <a class="text-light" href="#">Informazioni</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </footer>
+        <!--Script per visualizzare la categoria dei pokemon in base alla regione-->
+        <script>
+            function showCategory(region) {
+                document.querySelectorAll('.category-section').forEach(section => {
+                    section.classList.add('d-none');
+                });
+                document.getElementById(region).classList.remove('d-none');
+            }
+        </script>
+    </body>
+</html>

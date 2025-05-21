@@ -1,0 +1,437 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-image: url("../immagini/altre/sfondo3.jpg");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #fff;
+}
+
+/*------------BOTTONI------------*/
+a.btn, .bottone1 {
+    appearance: none;
+    background-color: #4aff7a;
+    border: 2px solid #147d29;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #147d29;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Comic Sans MS";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 60px;
+    min-width: 0;
+    outline: none;
+    padding: 16px 24px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+  }
+
+  .bottone2 {
+    appearance: none;
+    background-color: #4aff7a;
+    border: 2px solid #147d29;
+    border-radius: 12px;
+    box-sizing: border-box;
+    color: #147d29;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Comic Sans MS";
+    font-size: 14px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 45px;
+    min-width: 0;
+    outline: none;
+    padding: 12px 18px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+  }
+  
+  a.btn:hover, .bottone1:hover, .bottone2:hover {
+    color: #4aff7a;
+    background-color: #147d29;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+  }
+  
+  a.btn:active, .bottone1:active, .bottone2:active {
+    box-shadow: none;
+    transform: translateY(0);
+  }
+
+  /*------------FOOTER------------*/
+footer{
+    background-color: rgb(9, 59, 125); /* Blu */
+}
+
+footer a:hover {
+    color: #4aff7a !important; /* il testo diventa blu scuro */ 
+}
+
+/*------------NAVBAR------------*/
+/* Navbar con sfondo azzurro */
+.navbar {
+    background-color: rgb(9, 59, 125); /* Blu */
+}
+
+/* Cambia colore quando passi sopra le voci di menu */
+.navbar-nav .nav-link {
+    color: white; /* Testo bianco */
+    padding: 10px 15px; /* Spaziatura per ingrandire il riquadro */
+    border-radius: 5px; /* Angoli arrotondati */
+    transition: background-color 0.3s ease; /* Effetto di transizione fluido */
+}
+
+/* Effetto hover: cambia colore dello sfondo */
+.navbar-nav .nav-link:hover{
+    background-color: #ADD8E6; /* Blu più chiaro */
+    color: rgb(0, 7, 100) !important; /* il testo diventa blu scuro */ 
+    font-weight: bold;
+}
+
+.nav-link.active {
+    background-color: #ADD8E6; /* Blu più chiaro */
+    color: rgb(0, 7, 100) !important; /* il testo diventa blu scuro */ 
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Stile per il pulsante "Cerca" */
+.navbar .btn-light {
+    background-color: #ADD8E6; /* Azzurro chiaro */
+    border: none;
+    color: rgb(0, 7, 100); 
+    transition: background-color 0.3s ease;
+}
+
+/* Effetto hover sul pulsante "Cerca" */
+.navbar .btn-light:hover {
+    background-color: #87CEEB; /* Azzurro più intenso */
+}
+
+.navbar-brand img {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* ombra sull'immagine */
+    border-radius: 8px;
+  }
+  
+  .brand-text {
+    font-size: 1.2rem;
+    padding-top: 5px; /* regola l'allineamento verticale della scritta */
+  }
+
+  /*------------CAROSELLO------------*/
+/* Contenitore del carosello: controlla larghezza massima e centra tutto */
+.custom-carousel-container {
+    max-width: 700px;   /* Modifica la larghezza */
+    margin: 0 auto;     /* Centra orizzontalmente */
+}
+
+/* Immagini del carosello: controlla altezza e adattamento */
+.custom-carousel-img {
+    height: 300px;           /* Altezza fissa */
+    width: 100%;             /* Larghezza completa del contenitore */
+    object-fit: cover;       /* Ritaglia l'immagine senza deformarla */
+    border-radius: 10px;     /* Angoli arrotondati */
+}
+
+/*------------TITOLI------------*/
+h1,h2,h3 {
+
+    color: rgb(17, 120, 194);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+    -webkit-text-stroke: 1.4px rgb(0, 7, 100); /* per contorno blu scuro */
+    font-weight: bold;
+    padding: 5px;
+}
+
+h5,h6 {
+    color: rgb(17, 120, 194);
+    font-weight: bold;
+    padding: 5px;
+}
+
+h5.footer {
+    color: white;
+}
+
+/*------------REGIONI------------*/
+figcaption{
+    padding-top: 10px;
+}
+
+.category-img {
+    width: 150px;
+    height: 150px;
+    margin: 0 10px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.category-img:hover {
+    transform: scale(1.05);
+    border-color: rgb(0, 7, 100);
+    cursor: pointer;
+}
+
+.category-img.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.region-item {
+    display: inline-block; /* Disposizione orizzontale */
+    text-align: center;
+    margin: 0 10px; /* Spaziatura tra le immagini */
+}
+
+.region-item figcaption {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px; /* Spazio tra il titolo e l'immagine */
+}
+
+figure img.category-img {
+    width: 250px; /* per regolare la larghezza delle immagini */
+    height: 200px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+figure img.category-img:hover {
+    transform: scale(1.05);
+}
+
+.imm1 {
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+.immHeader{
+    width: 35%;
+}
+
+
+/*------------------CARDS-------------------*/
+
+.custom-card {
+  display: flex;
+  flex-direction: column;
+  background-color: beige;
+  height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.custom-card:hover {
+    transform: scale(1.03); /* Ingrandimento più leggero */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Ombra più morbida */
+}
+
+.card-title {
+    font-size: 1.2rem;
+    color: rgb(0, 7, 100);
+}
+
+.card-text {
+    font-size: 0.95rem;
+    color: #666;
+}
+
+.card-img-top {
+    max-width: 50%;
+    height: auto;
+    margin: 0 auto;
+    min-height: 275px;
+    padding: 10px;
+}
+
+.card-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-content .bottone2 {
+  margin-top: auto;
+}
+
+.card-body{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+}
+
+.custom-img {
+    max-width: 175px;
+    max-height: 175px;  /* limita l'altezza */
+    margin: 0 auto;
+    display: block;
+    }
+
+.cardTV {
+  width: 95%;
+  height: 250px;         /* fissa un'altezza uguale per tutte */
+  object-fit: cover;     /* ritaglia bene le immagini senza deformarle */
+  border-radius: 10px;
+}
+/*************************************************************************/
+
+/*----------------TIPI POKEMON------------*/
+.tipo {
+    padding: 2px 8px;        /* Spazio interno per ingrandire visivamente */
+    border-radius: 10px;     /* Bordi arrotondati */
+    font-weight: bold;       /* Testo più marcato */
+    display: inline-block;   /* Serve per applicare padding correttamente */
+    margin-top: 5px;         /* Spazio sopra*/
+}
+
+.tipoFuoco {
+    color: white;
+    background-color: rgb(255,69,0);
+}
+
+.tipoVolante {
+    color: black;
+    background-color: #87CEFA;
+}
+
+.tipoElettro {
+    color: black;
+    background-color: rgb(234, 234, 9);
+}
+
+.tipoErba {
+    color: black;
+    background-color: #3cbe3c;
+}
+
+.tipoTerra {
+    color:white;
+    background-color: #8B4513;
+}
+
+.tipoAcqua {
+    color: white;
+    background-color: #3d73d6;
+}
+
+.tipoDrago {
+    color: white;
+    background-color: #191970;
+}
+
+/*--------------PAGINAZIONE-------------*/
+.pagination .page-link {
+    color: rgb(9, 59, 125);
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.pagination .page-link:hover {
+    background-color: rgb(9, 59, 125);
+    color: #fff;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: rgb(9, 59, 125);
+    border-color: rgb(9, 59, 125);
+    color: #fff;
+}
+
+/*------------- Accordion (filtri)--------------*/
+.accordion-button {
+    background-color: #ADD8E6;
+    border: none;
+    box-shadow: none;
+}
+
+.accordion-button:hover {
+    background-color: rgb(134, 170, 217);
+}
+
+.accordion-button:focus {
+    box-shadow: none !important;
+}
+
+.accordion-body {
+    background-color: beige;
+    color: #333;
+}
+
+.caros{
+    background-color: beige;
+}
+
+/*--------------Carosello Item---------------*/
+.caros2 {
+    max-width: 800px;
+    margin: 0 auto;
+    height: 500px;
+    position: relative;
+    border-radius: 15px;
+}
+
+.imm_caros2 {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain; /* Mantiene il rapporto d’aspetto senza tagliare */
+}
+
+/*--------------Breadcrumbs---------------*/
+.breadcrumb {
+    background-color: transparent;
+    font-size: 0.9rem;
+}
+
+.breadcrumb-item a {
+    color: rgb(17, 120, 194);
+    transition: color 0.3s ease;
+}
+
+.breadcrumb-item a:hover {
+    text-decoration: underline;
+    color: rgb(0, 7, 100);
+}
+
+/*novità*/
+p.lead {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/*------WEB PROJECT PLAN------*/
+.wpplan{
+   /* color: #4aff7a;
+    -webkit-text-stroke: 1px #044912;  per contorno verde scuro */
+    color: rgb(17, 120, 194);
+    -webkit-text-stroke: 0.4px #87CEEB;/* per contorno blu scuro */
+}

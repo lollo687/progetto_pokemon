@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Metadati Dublin Core -->
+        <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"/>
+
+        <META name="DC.Title" content="Il Mondo Pokemon - Catalogo Digitale"/>
+        <META name="DC.Creator" content="Lorenzo Grasso"/>
+        <META name="DC.Subject" content="Pokemon, Pokedex, Personaggi, Film e Serie TV, Videogiochi"/>
+        <META name="DC.Description" content="Un catalogo digitale dedicato al mondo dei Pokemon, con schede dettagliate sui pokemon, personaggi, film, serie TV e videogiochi."/>
+        <META name="DC.Publisher" content="Github Pages"/>
+        <META name="DC.Date" content="2024/01/01"/>
+        <META name="DC.Type" content="Catalogo web interattivo"/>
+        <META name="DC.Format" content="Sito web"/>
+        <META name="DC.Source" content="Pokémon - Ideato da Satoshi Tajiri, sviluppato da Game Freak"/>
+        <META name="DC.Language" content="It"/>
+    
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+     
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+     
+        <!-- CSS Personalizzato -->
+        <link rel="stylesheet" href="./css/stili_generali.css"/>
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
+        <link rel="shortcut icon" href="favicon/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+        <meta name="apple-mobile-web-app-title" content="MyWebSite" />
+        <link rel="manifest" href="favicon/site.webmanifest" />
+    
+         <title>Il Mondo Pokemon</title>
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="bg-primary text-white py-5">
+            <div class="container text-center">
+                <img src="./immagini/altre/scrittaDEFINITIVA2pokemon.png" class="img-fluid immHeader" alt="SCRITTA POKEMON">
+            </div>
+        </header>
+    
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+            <div class="container d-flex justify-content-between align-items-center">
+              <!-- Logo + Scritta -->
+              <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="./immagini/altre/Logo.jpg" alt="Logo" width="50" class="d-inline-block">
+                <span class="ms-3 brand-text">IL MONDO POKEMON</span>
+              </a>
+          
+              <!-- Menu + barra di ricerca -->
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav me-3">
+                  <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                  <li class="nav-item"><a class="nav-link" href="pagine/pokedex.html">Pokedex</a></li>
+                  <li class="nav-item"><a class="nav-link" href="pagine/personaggi.html">Personaggi</a></li>
+                  <li class="nav-item"><a class="nav-link" href="pagine/film_serieTV.html">Film e SerieTV</a></li>
+                  <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="videogiochiDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Videogiochi</a>
+                        <ul class="dropdown-menu" aria-labelledby="videogiochiDropdown">
+                            <li><a class="dropdown-item" href="#">Console</a></li>
+                            <li><a class="dropdown-item" href="#">Mobile</a></li>
+                            <li><a class="dropdown-item Novita" href="pagine/novita.html">Novita!</a></li>
+                        </ul>
+                    </li>
+                  <li class="nav-item"><a class="nav-link" href="pagine/accesso.html">Accedi</a></li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Cerca...">
+                  <button class="btn btn-light" type="submit">Cerca</button>
+                </form>
+              </div>
+          
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+          </nav>  
+       
+<!------------------------------------------------------------------------------------------------------------------------------------------>
+    <main class="container py-5">
+        <div class="container mb-5">
+            <h1>IL MONDO POKEMON</h1>
+            <p>
+                    CIAO!! In questo sito potrai esplorare ogni angolo del mondo dei pokemon, così da scoprire tutte le loro caratteristiche e misteri.
+                    Esistono pokemon di ogni genere, l'obiettivo di un grande allenatore è quello di catturarli tutti ed essere il numero UNO nelle lotte pokemon!
+            </p>
+        </div>
+        <div class="container my-5">
+            <div class="row align-items-center mb-5">
+                <div class="col-md-6">
+                    <img src="immagini/altre/tuttiPokemon.jpg" alt="Descrizione" class="img-fluid rounded imm1">
+                </div>
+                <div class="col-md-6 text-start">
+                    <h2>Pokemon</h2>
+                    <p>
+                        I Pokémon (abbreviazione di Pocket Monsters, cioè mostri tascabili) sono creature immaginarie che vivono in un mondo fantastico. I giocatori (o allenatori) li catturano, li allenano e li fanno combattere in sfide amichevoli.
+                        Ogni Pokémon ha abilità, tipi (come fuoco, acqua, erba) e può evolversi in forme più forti. Oltre ai videogiochi, esistono anche carte da collezione, anime, film e gadget.
+                    </p>
+                    <h2>
+                        Chi li ha creati
+                    </h2>
+                    <p>
+                        I Pokémon sono stati creati da Satoshi Tajiri, un game designer giapponese appassionato di insetti e collezionismo.
+                        Il primo gioco Pokémon è stato pubblicato nel 1996 da Game Freak e Nintendo, insieme all'azienda Creatures Inc., sotto il marchio
+                        <a href="#" data-bs-toggle="modal" class="ao" data-bs-target="#pokemonCompanyModal"><strong> The Pokémon Company.</strong></a>
+                    </p>
+                </div>
+            </div>
+             <!-- Bottone per Mappa Interattiva -->
+            <section class="text-center mb-5">
+                <button class="bottone1" data-bs-toggle="modal" data-bs-target="#mappaModal">Date della storia POKEMON</button>
+            </section>
+        </div>
+        <section class="container my-5">
+
+            <!-- Carosello automatico -->
+            <div id="caroselloPokemon" class="carousel slide custom-carousel-container caros2" data-bs-ride="carousel" data-bs-interval="3000">
+                <h2>I POKEMON PIU' AMATI</h2>
+                <div class="carousel-inner text-center caros2 caros">
+
+                    <div class="carousel-item active">
+                        <img src="immagini/pokedex/charizard.png" class="custom-carousel-img d-block mx-auto imm_caros2" alt="charizard">
+                        <h3>CHARIZARD</h3>
+                        <div class="mt-3">
+                            <a href="pagine/item_1.html" class="btn">DETTAGLI</a>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="immagini/pokedex/pikachu.png" class="custom-carousel-img d-block mx-auto  imm_caros2" alt="pikachu">
+                        <h3>PIKACHU</h3>
+                        <div class="mt-3">
+                            <a href="pagine/pokedex.html" class="btn">DETTAGLI</a>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="immagini/pokedex/palkia.png" class="custom-carousel-img d-block mx-auto imm_caros2" alt="palkia">
+                        <h3>PALKIA</h3>
+                        <div class="mt-3">
+                            <a href="pagine/pokedex.html" class="btn">DETTAGLI</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Controlli -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#caroselloPokemon" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#caroselloPokemon" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </section>
+
+            <!-- Modale Pokemon Company -->
+        <div class="modal fade" id="pokemonCompanyModal" tabindex="-1" aria-labelledby="pokemonCompanyModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="pokemonCompanyModalLabel">Pokemon Company</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="./immagini/altre/pokemon_company.png" class="img-fluid rounded shadow text-center" alt="Foto Pokemon Company mb-5">
+                        <p class="contaniner my-4">
+                            The Pokémon Company è l'azienda giapponese che gestisce il marchio Pokémon in tutto il mondo: giochi, anime, carte, merchandising e licenze.
+                            È stata fondata nel 1998 a Tokyo per unificare e coordinare tutte le attività legate al franchise Pokémon, che stava già diventando un fenomeno globale.
+                        </p>
+                        <div class="container my-3">
+                            <p><h6>Anni 90':</h6>I Pokémon nascono nel 1996 grazie a Satoshi Tajiri, con i primi giochi per Game Boy (Pokémon Rosso e Verde) sviluppati da Game Freak e pubblicati da Nintendo.</p>
+                            <p><h6>1998:</h6>Per gestire l'enorme successo, Nintendo, Game Freak e Creatures Inc. fondano The Pokémon Company.</p>
+                            <p><h6>Da allora: </h6>L'azienda ha supervisionato tutto: giochi, serie TV, film, eventi, carte da collezione e prodotti di ogni tipo. Oggi è uno dei brand più riconoscibili al mondo.</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modale Mappa Interattiva -->
+    <div class="modal fade" id="mappaModal" tabindex="-1" aria-labelledby="mappaModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="mappaModalLabel">Date della storia POKEMON</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="ratio ratio-16x9">
+                        <iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=v2%3A2PACX-1vT2nEdPNclHk2IjWsQoK_9h8pS8Bwt3t2UJlsgWLRM4co8TVBMdtsrvf4z8IGlR7im7DIplxQ2HpThA&font=Default&lang=en&initial_zoom=2&width=100%25&height=650' width='100%' height='650' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe>                    </div>
+                    </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </main>
+
+<!------------------------------------------------------------------------------------------------------------------------------------------->
+    
+          <!-- Footer -->
+        <footer>
+            <section class="container-fluid text-light py-3">
+                <div class="row">
+                    <!-- Disclaimer -->
+                    <div class="col-md-6 mb-3">
+                        <p class="mb-2">
+                            Tutti i diritti sui contenuti di questo sito (nomi, immagini, testi ed altro) sono di proprietà dei rispettivi autori e/o case editrici,
+                            sotto la tutela delle leggi internazionali sul copyright/trademark.
+                        </p>
+                        <p class="mb-0">
+                            Questo progetto è totalmente privo di scopi di lucro da parte dell'autore. Lo scopo è puramente amatoriale e perciò non è assolutamente affiliato o dipendente da alcun editore.
+                        </p>
+                    </div>
+                    <!-- Social Media -->
+                    <div class="col-md-3 mb-3 text-center">
+                        <h5 class="mb-3 footer">Seguici</h5>
+                        <a href="#" class="text-light me-3"><i class="bi bi-facebook fs-4"></i></a>
+                        <a href="#" class="text-light me-3"><i class="bi bi-twitter fs-4"></i></a>
+                        <a href="#" class="text-light me-3"><i class="bi bi-instagram fs-4"></i></a>
+                        <a href="#" class="text-light"><i class="bi bi-youtube fs-4"></i></a>
+                    </div>
+                    <!-- Link utili -->
+                    <div class="col-md-3 mb-3 text-center">
+                        <h5 class="mb-3 footer">Link Utili</h5>
+                        <ul class="list-inline mb-0">
+                            <li class="list-inline-item mx-2">
+                                <a class="text-light" href="#">Credits</a>
+                            </li>
+                            <li class="list-inline-item mx-2">
+                                <a class="text-light" href="../src/pagine/WebProjectPlan.html">Web Project Plan</a>
+                            </li>
+                            <li class="list-inline-item mx-2">
+                                <a class="text-light" href="#">Informazioni</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </footer>
+    </body>
+</html>
